@@ -1,0 +1,194 @@
+body {
+        background-color: #f8fafc; 
+        padding: 1rem;
+        font-family: system-ui, sans-serif;
+        color: #0f172a;
+
+        display: flex;              
+        justify-content: center;    
+        align-items: center;        
+        min-height: 100vh;          
+        margin: 0; 
+    }
+    .container {
+        max-width: 42rem;
+        margin: 0 auto;
+    }
+
+    .scoreboard-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    @media (min-width: 640px) {
+        .scoreboard-wrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        }
+    }
+    .scoreboard {
+        font-size: 0.875rem;
+        color: #334155;
+    }
+    @media (min-width: 640px) {
+        .scoreboard {
+        font-size: 1rem;
+        }
+    }
+    .scoreboard span {
+        font-weight: 600;
+    }
+    .score-wins {
+        color: #047857;
+    }
+    .score-losses {
+        color: #e11d48;
+    }
+    .score-draws {
+        color: #0f172a;
+    }
+    .controls {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    button {
+        font-size: 0.875rem;
+        font-weight: 500;
+        border-radius: 0.375rem;
+        cursor: pointer;
+    }
+    button:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    .btn-outline {
+        padding: 0.5rem 1rem;
+        border: 1px solid #e2e8f0;
+        background-color: white;
+    }
+    .btn-outline:hover {
+        background-color: #f8fafc;
+        color: #0f172a;
+    }
+    .btn-ghost {
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+    }
+    .btn-ghost:hover {
+        background-color: #f1f5f9;
+        color: #0f172a;
+    }
+
+    .game-card {
+        border-radius: 0.5rem;
+        border: 1px solid #e2e8f0;
+        background-color: white;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        padding: 1rem;
+    }
+    .status-text {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 0.875rem;
+        color: #334155;
+    }
+    @media (min-width: 640px) {
+        .status-text {
+        font-size: 1rem;
+        }
+    }
+    .status-win {
+        color: #047857;
+    }
+    .status-lose {
+        color: #e11d48;
+    }
+
+    .choices-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        max-width: 28rem;
+        margin: 0 auto;
+    }
+    @media (min-width: 640px) {
+        .choices-grid {
+        gap: 0.75rem;
+        }
+    }
+    .choice-button {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 0.375rem;
+    background-color: transparent; 
+    color: #0f172a; 
+    outline: none;
+    border: 1px solid #e2e8f0; 
+    }
+    @media (min-width: 640px) {
+        .choice-button {
+        height: 5rem;
+        font-size: 1.875rem;
+        }
+    }
+    .choice-button:hover {
+        background-color: #f1f5f9; 
+    }
+    .choice-button:focus {
+        box-shadow: 0 0 0 2px #94a3b8;
+    }
+    .choice-button.active {
+        box-shadow: 0 0 0 2px #059669;
+    }
+
+    .results-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        max-width: 28rem;
+        margin: 1.25rem auto 0;
+        text-align: center;
+    }
+    .result-card {
+        border-radius: 0.375rem;
+        border: 1px solid #e2e8f0;
+        background-color: white;
+        padding: 0.75rem;
+        background-color: transparent; 
+    }
+    .result-label {
+        font-size: 0.75rem;
+        color: #64748b;
+    }
+    @media (min-width: 640px) {
+        .result-label {
+        font-size: 0.875rem;
+        }
+    }
+    .result-value {
+        margin-top: 0.25rem;
+        font-size: 1.875rem;
+    }
+    @media (min-width: 640px) {
+        .result-value {
+        font-size: 2.25rem;
+        }
+    }
+
+    .tip {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+        color: #64748b;
+        text-align: center;
+    }
+    @media (min-width: 640px) {
+        .tip {
+        font-size: 0.875rem;
+        }
+    }

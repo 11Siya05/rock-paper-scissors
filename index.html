@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+    <div class="container">
+    <div class="scoreboard-wrapper">
+        <div class="scoreboard" id="scoreDisplay">
+        Score — Wins: <span class="score-wins" id="winsCount">0</span> •
+        Losses: <span class="score-losses" id="lossesCount">0</span> •
+        Draws: <span class="score-draws" id="drawsCount">0</span>
+        </div>
+        <div class="controls">
+        <button id="resetRoundBtn" class="btn-outline" disabled>Reset Round</button>
+        <button id="resetScoresBtn" class="btn-ghost">Reset Scores</button>
+        </div>
+    </div>
+
+    <div class="game-card">
+        <div id="statusText"  class="status-text">
+        Choose your hand
+        </div>
+
+        <div class="choices-grid">
+        <button id="rockBtn" type="button" data-choice="rock" class="choice-button">
+            <span aria-hidden="true">✊</span>
+        </button>
+        <button id="paperBtn" type="button" data-choice="paper" class="choice-button">
+            <span aria-hidden="true">✋</span>
+        </button>
+        <button id="scissorsBtn" type="button" data-choice="scissors" class="choice-button">
+            <span aria-hidden="true">✌️</span>
+        </button>
+        </div>
+
+        <div class="results-grid">
+        <div class="result-card">
+            <div class="result-label">You</div>
+            <div class="result-value" id="playerChoice">—</div>
+        </div>
+        <div class="result-card">
+            <div class="result-label">Computer</div>
+            <div class="result-value" id="cpuChoice">—</div>
+        </div>
+        </div>
+
+        <div class="tip">
+        Tip: Tap a hand to play. Result shows briefly, then the round resets.
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
