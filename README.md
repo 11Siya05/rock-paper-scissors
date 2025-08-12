@@ -29,7 +29,8 @@ A classic game of Rock, Paper, Scissors built with HTML, CSS, and JavaScript. Pl
 
 ## Screenshots
 
-*You can add a screenshot of your game here*
+<img width="671" height="298" alt="image" src="https://github.com/user-attachments/assets/af62063f-3cd8-4773-8ade-38df1c96a2ef" />
+
 
 ## License
 
