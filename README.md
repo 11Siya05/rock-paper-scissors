@@ -7,7 +7,7 @@ A classic game of Rock, Paper, Scissors built with HTML, CSS, and JavaScript. Pl
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/your-username/rock-paper-scissors.git
+    git clone https://github.com/11Siya05/rock-paper-scissors.git
     ```
 2.  Navigate to the project directory:
     ```bash
